@@ -1,0 +1,550 @@
+
+/*----banner----*/
+.banner{
+    background: white;
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    z-index: 1;
+
+}
+.banner::before{
+    position: absolute;
+    content: '';
+    bottom: -28%;
+    right: 0;
+    background-image: url(log2.png);
+    width: 300px;
+    height: 246px;
+    background-size: 216px;
+    background-repeat: no-repeat;
+}
+.banner .details{
+    position: absolute;
+    padding: 0 0;
+    left: 5%;
+    top: 10%;
+    text-align: center;
+    z-index:200 ;
+
+}
+.banner .details h1{
+    font-size: 60px;
+    color: #000;
+    width: 500px;
+    text-transform: capitalize;
+    margin-left: 400px;
+}
+.banner .details p{
+    font-size: 18px;
+    width: 900PX;
+    margin-left: 22%;
+   margin-top: -3%;
+
+}
+.banner .details a{
+    text-transform: uppercase;
+    color: #000;
+
+}
+.banner .details span{
+    color: #fff;
+}
+
+/*-----header---- */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+    transition: .3s;
+}
+
+
+header{
+    background: #fffefe;
+    box-shadow: 0 5px 20px 0.1px rgba(0,0,0,0.1);
+    backdrop-filter: blur(20px); 
+}
+header .scrolled{
+   color: black;
+}
+.flex{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+.navbar a{
+    margin: 0 16px;
+    font-size: 16px;
+    color: #e66767;
+    text-transform: uppercase;
+}
+.navbar a:hover,header .icons i:hover {
+    color: #000000;
+   text-decoration: none;
+}
+.header .icons{
+    display: flex ;
+}
+.header img{
+    width: 150px;
+}
+.header .icons i{
+    margin-left: 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+}
+#menu-btn{
+    display: none;
+}
+
+
+
+/*---admin dashboard---*/
+.dashboard{
+    background: rgb(199, 174, 174,0.5);
+    padding: 10px;
+    width: 95%;
+    margin-top: 32px;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/* .dashboard::before{
+    position: absolute;
+    content: '';
+    top: -65%;
+    left: -10px;
+    background-image: url(log1.png);
+    width: 1500px;
+    height: 500px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: 100;
+    opacity:0.2;
+    
+
+} */
+.box_container{
+   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 10px; 
+    max-width: 700px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+.box_container .box{
+    background: rgba(243, 242, 242);
+    box-shadow: black;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+
+.dashboard h3{
+    text-align: center;
+    font-size: 32px;
+}
+.dashboard p{
+    font: size 20px; ;
+    text-transform: capitalize;
+    margin: 0px 0;
+}
+
+
+/*---add products---*/
+.add_products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Form Styling */
+.form {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Input Fields */
+.input_field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input_field label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.input_field input[type="text"],
+.input_field input[type="file"],
+.input_field textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input_field input[type="text"]:focus,
+.input_field input[type="file"]:focus,
+.input_field textarea:focus {
+    border-color: #4a90e2;
+}
+
+/* Textarea Styling */
+.input_field textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d7dee6;
+}
+
+.message{
+    margin-top: 5%;
+    background-color: #000;
+    color: white;
+    border: 4px solid black;
+    text-align: center;
+    border-radius: 5px;
+}
+.empty{
+    /* margin-top: 2%; */
+    background-color: #000;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.line{
+    background-color: #000;
+    border: 3px groove rgb(48, 48, 82);
+
+}
+
+/* General styles for the product section */
+.show_product,
+.message-container {
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+
+.show_product .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+/* Individual product box styling */
+.box-container .box1 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    padding: 1rem;
+}
+
+.box-container .box1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.box-container .box1 img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1rem;
+}
+
+/* Product details */
+.box-container .box1 h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.box-container .box1 p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.box-container .box1 details {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+/* Button styling */
+.box-container .box1 .edit,
+.box-container .box1 .delete {
+    color: #fff;
+    background-color: #0e2d13;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 0.3rem;
+    display: inline-block;
+}
+
+.box-container .box1 .edit:hover {
+    background-color: #125d25;
+}
+
+.box-container .box1 .delete:hover {
+    background-color: #801515;
+}
+
+
+/* -----Update product---- */
+/* .update-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1100;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+} */
+
+.update-container form {
+    max-width: 30%;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.update-container form img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+/* Buttons Container */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Buttons */
+.update-container .btn, 
+.update-container .edit {
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.update-container .edit {
+    background-color: #0e2d13;
+}
+
+.update-container .edit:hover {
+    background-color: #125d25;
+}
+
+.update-container .option-btn {
+    background-color: #d9534f;
+}
+
+.update-container .option-btn:hover {
+    background-color: #c9302c;
+}
+.update-container details {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+.message-container .title{
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 1rem;
+}
+
+
+
+
+/* admin.css */
+
+h1.title {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.box span {
+    font-weight: bold;
+    color: #333;
+}
+
+.box a {
+    display: inline-block;
+    color: #ff4d4d;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.box a:hover {
+    color: #ff1a1a;
+}
+
+.message {
+    background-color: #e0ffe0;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid #cceccc;
+}
+
+.message i {
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.message i:hover {
+    color: #333;
+}
+
+.empty {
+    text-align: center;
+    color: #aaa;
+    font-size: 16px;
+}
+
+
+/*---media screen---*/
+@media (max-width:991px ){
+    #menu-btn{
+        display: block;
+    }
+    .header .flex .navbar{
+        position:absolute ;
+        top: 149%;
+        left: 0;
+        display: block;
+        right: 0;
+        border-top: 1px solid black;
+        background: white;
+        transition: .3s ease;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    
+    }
+    .header .flex .navbar .active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
+.header .flex .navbar a{
+    display: block;
+    margin: 32px;
+}
+.banner .details{
+    left: 10%;
+}
+}
